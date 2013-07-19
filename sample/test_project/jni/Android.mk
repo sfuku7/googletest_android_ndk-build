@@ -22,10 +22,20 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+GTEST_DIR := external/gtest
+LOCAL_MODULE := gtest-prebuilt
+LOCAL_SRC_FILES := ../$(GTEST_DIR)/lib/libgtest.a
+LOCAL_EXPORT_C_INCLUDES := $(GTEST_DIR)/include
+include $(PREBUILT_STATIC_LIBRARY)
 
-LOCAL_CPP_EXTENSION := .cc
-LOCAL_MODULE := libgtest
-LOCAL_C_INCLUDES := include .
-LOCAL_SRC_FILES := ../src/gtest-all.cc
+include $(CLEAR_VARS)
+GTEST_DIR := external/gtest
+LOCAL_MODULE := sample_code_test
+LOCAL_STATIC_LIBRARIES := gtest-prebuilt
+LOCAL_SRC_FILES := \
+    SampleCodeTestMain.cpp \
+    SampleCode.cpp \
+    SampleCodeTestCase.cpp
+include $(BUILD_EXECUTABLE)
 
-include $(BUILD_STATIC_LIBRARY)
+

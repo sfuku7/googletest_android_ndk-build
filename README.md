@@ -1,7 +1,10 @@
-googletest with Android NDK
+googletest with Android NDK and gcov
 ============================
 
-This repository provides the way how to build googletest for Android with Android NDK.
+This project shows below topics
+
+1. How to build googletest with Android NDK
+2. How to get code coverage with gcov on Android.
 
 googletest is Google's unit test framework for C++.
 

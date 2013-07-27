@@ -119,10 +119,16 @@ Overall coverage rate:
   branches...: no data found
 
 $ google-chrome coverage/index.html
-
 ```
+You can see a caverage report as below.
 
-### Details
+![Summary](readme_img/coverage_summary.png)
+
+Click file name and you can find line coverage as below.
+
+![file](readme_img/coverage_file.png)
+
+### Build Details
 
 See sample/test_project/jni/Android.mk
 

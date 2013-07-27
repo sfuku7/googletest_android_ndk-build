@@ -38,4 +38,16 @@ LOCAL_SRC_FILES := \
     SampleCodeTestCase.cpp
 include $(BUILD_EXECUTABLE)
 
+include $(CLEAR_VARS)
+GTEST_DIR := external/gtest
+LOCAL_MODULE := sample_code_test_code_coverage
+LOCAL_STATIC_LIBRARIES := gtest-prebuilt
+LOCAL_CFLAGS := --coverage
+LOCAL_LDFLAGS := --coverage
+LOCAL_SRC_FILES := \
+    SampleCodeTestMain.cpp \
+    SampleCode.cpp \
+    SampleCodeTestCase.cpp
+include $(BUILD_EXECUTABLE)
+
 

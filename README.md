@@ -1,3 +1,11 @@
+!!!! NOTICE !!!!
+===========================
+This project was deprecated.
+Now you can find google test in the official Android NDK.
+
+
+
+
 googletest with Android NDK and gcov
 ============================
 

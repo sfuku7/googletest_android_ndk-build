@@ -1,7 +1,8 @@
 !!!! NOTICE !!!!
 ===========================
-This project was deprecated.
-Now you can find google test in the official Android NDK.
+This project was deprecated. Please don't use this project
+
+Now you can find google test in the official Android NDK. Please follow the official instructions of Android NDK.
 
 
 
